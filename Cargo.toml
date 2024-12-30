@@ -1,6 +1,6 @@
 [package]
 name = "international_standard_atmosphere"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Atmo"]
 edition = "2021"
 license = "Unlicense"
