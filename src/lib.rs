@@ -5,7 +5,6 @@ pub mod isa{
     use std::fmt::Error;
     use crate::layers::*;
     use crate::reference::constants::*;
-    use libm::{exp, floorf, sin, sqrtf}; // no_std compatibility
 
     #[derive(Debug)]
     pub enum Constraint{

@@ -1,7 +1,12 @@
 [package]
-name = "icao_standard_atmosphere"
+name = "international_standard_atmosphere"
 version = "0.1.0"
 edition = "2021"
+license = "Unlicense"
+description = "This model was implemented using the Manual of the ICAO Standard Atmosphere - extended to 80 kilometres / 262,500 feet (Doc 7488)."
+readme = "README.md"
+repository = "https://github.com/MeechaelA/InternationalStandardAtmosphere"
+keywords = ["license", "copyright"]
+exclude = [".*", "/docs", "README.md", ]
 
 [dependencies]
-libm = "*"

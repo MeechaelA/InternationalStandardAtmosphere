@@ -1,6 +1,6 @@
 use std::fs::File;
 use std::io::prelude::*;
-use icao_standard_atmosphere::isa;
+use international_standard_atmosphere::isa;
 
 #[test]
 fn build_temperature_pressure_density_table() {

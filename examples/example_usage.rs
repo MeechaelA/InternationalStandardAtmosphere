@@ -1,4 +1,4 @@
-use icao_standard_atmosphere::isa;
+use international_standard_atmosphere::isa;
 
 fn main() {
     let icao_standard_atmosphere = isa::ISA::new();
