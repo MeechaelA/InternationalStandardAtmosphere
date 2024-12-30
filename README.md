@@ -41,7 +41,7 @@ There are minute differences in temperature, density, and pressure. It is though
 ## History
 The International Standard Atmosphere was originally calculated on the Minsk-22 Computer. 
 
-![https://ajovomultja.hu/minsk-22?language=en](docs/images/minsk-22.bmp)
+[![Minsk-22](docs/images/minsk-22.bmp)](https://ajovomultja.hu/minsk-22?language=en)
 
 # Warning
 Thoroughly vet this library yourself before using in a real life application.
