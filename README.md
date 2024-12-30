@@ -31,6 +31,21 @@ Actively in-development\
 ## Implementation
 Following the manual, relationships of the atmosphere are based on base temperatures, and base densities. These two values allow the calculation of base pressure. These base characteristics are accompanied by a lapse rate, which characterizes the change in temperature over a range of altitudes. The lapse rate allows variable temperatures, pressures, and densities to be calculated according to altitude.
 
+## Example Usage
+```
+use international_standard_atmosphere::isa;
+fn main() {
+    let icao_standard_atmosphere = isa::ISA::new();
+    let test_altitude = 0.0;
+    let temperature = icao_standard_atmosphere.temperature(test_altitude).expect("Layer not found.");
+    let pressure = icao_standard_atmosphere.pressure(test_altitude).expect("Layer not found.");
+    let density = icao_standard_atmosphere.density(test_altitude).expect("Layer not found.");
+    println!("Temperature: {}", temperature);
+    println!("Pressure: {}", pressure);
+    println!("Density: {}", density);
+}
+```
+
 ## Verification
 Verification of the model was completed by manually extracting the data from the manual, for temperature and density. These two values were used to calculate pressures, following the approach in the manual. This was done as manually tabulating the altitude, temperature, and density columns took quite a long time. Below, you will find this models calculation comparison to the ISA geometric altitude tabulated temperature, density, and pressure (recalculated from temperature and density).  
 
@@ -43,5 +58,6 @@ The International Standard Atmosphere was originally calculated on the Minsk-22 
 
 [![Minsk-22](docs/images/minsk-22.bmp)](https://ajovomultja.hu/minsk-22?language=en)
 
-# Warning
+## Warning
 Thoroughly vet this library yourself before using in a real life application.
+
