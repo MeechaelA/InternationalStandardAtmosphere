@@ -32,7 +32,7 @@ Actively in-development\
 Following the manual, relationships of the atmosphere are based on base temperatures, and base densities. These two values allow the calculation of base pressure. These base characteristics are accompanied by a lapse rate, which characterizes the change in temperature over a range of altitudes. The lapse rate allows variable temperatures, pressures, and densities to be calculated according to altitude.
 
 ## Verification
-Verification of the model was completed by manually extracting the data from the manual, for temperature and density. These two values were used to calculate pressures, following the approach in the manual, as manually the temperature and density columns took quite a long time. Below, you will find this models calculation comparison to the ISA geometric altitude tabulated temperature, density, and pressure (recalculated from temperature and density).  
+Verification of the model was completed by manually extracting the data from the manual, for temperature and density. These two values were used to calculate pressures, following the approach in the manual. This was done as manually tabulating the altitude, temperature, and density columns took quite a long time. Below, you will find this models calculation comparison to the ISA geometric altitude tabulated temperature, density, and pressure (recalculated from temperature and density).  
 
 <img src="docs/images/ISA_Analysis.png" alt="ISA Comparison" width="500"/>
 
