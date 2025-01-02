@@ -47,7 +47,7 @@ fn main() {
 ```
 
 ## Verification
-Verification of the model was completed by manually extracting the data from the manual, for temperature and density. These two values were used to calculate pressures, following the approach in the manual. This was done as manually tabulating the altitude, temperature, and density columns took quite a long time. Below, you will find this models calculation comparison to the ISA geometric altitude tabulated temperature, density, and pressure (recalculated from temperature and density).  
+Verification of the model was completed by extracting the data from the manual, for temperature, pressure, and density. These columns were compared to this models implementation for calculating temperature, pressure, and density. Below, you will find this models calculation comparison to the ISA geometric altitude tabulated temperature, pressure, and density.  
 
 <img src="docs/images/ISA_Analysis.png" alt="ISA Comparison" width="500"/>
 
@@ -61,3 +61,5 @@ The International Standard Atmosphere was originally calculated on the Minsk-22 
 ## Warning
 Thoroughly vet this library yourself before using in a real life application.
 
+## Credits
+Huge credit to [MeGaGiGaGon](https://github.com/MeGaGiGaGon) for implementing the ability to parse the ISA tables that are available in the ISA Manual.
